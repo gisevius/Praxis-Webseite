@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, follow">
+<title>Impressum – Psychotherapiepraxis Madeleine Gisevius</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#F6F0E8;--cream-dk:#EDE4D6;--white:#FFFFFF;
+  --border:#DDD5C4;--moss:#3B5445;--sage:#5C7D65;
+  --sage-pale:#E8F0E9;--terra:#B8714E;
+  --rule:rgba(61,50,40,.1);--stone:#6B6358;--ink:#1E2018;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:16px;line-height:1.75;
+  color:var(--ink);background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Libre Baskerville',Georgia,serif;font-weight:400;line-height:1.25;color:var(--ink)}
+a{color:var(--moss);text-decoration:none;transition:color .2s}
+a:hover{color:var(--terra)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.75rem}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:200;
+  background:rgba(246,240,232,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{
+  font-family:'Libre Baskerville',serif;
+  font-size:.95rem;font-weight:400;color:var(--ink);
+  letter-spacing:.015em;
+  display:flex;align-items:center;gap:.65rem;flex-shrink:0;
+  text-decoration:none;
+}
+.logo-mark{width:32px;height:32px;flex-shrink:0}
+.logo-sub{
+  font-family:'Inter',sans-serif;font-size:.68rem;
+  font-weight:400;color:var(--stone);
+  letter-spacing:.06em;text-transform:uppercase;
+  display:block;margin-top:2px;
+}
+.nav-back{
+  font-size:.82rem;color:var(--stone);
+  display:flex;align-items:center;gap:.4rem;
+  transition:color .2s;
+}
+.nav-back:hover{color:var(--moss)}
+
+/* MAIN */
+main{padding:4rem 0 6rem}
+
+.page-label{
+  font-size:.7rem;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--terra);margin-bottom:.65rem;
+}
+.page-title{
+  font-size:clamp(1.8rem,3.5vw,2.6rem);
+  margin-bottom:.75rem;letter-spacing:-.01em;
+}
+.page-sub{
+  font-size:.95rem;color:var(--stone);
+  margin-bottom:3.5rem;line-height:1.8;
+}
+
+/* SECTIONS */
+.imp-block{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:2rem 2.25rem;
+  margin-bottom:1.5rem;
+}
+.imp-block h2{
+  font-size:1rem;
+  font-family:'Inter',sans-serif;
+  font-weight:500;
+  letter-spacing:.04em;
+  color:var(--stone);
+  text-transform:uppercase;
+  font-size:.72rem;
+  letter-spacing:.12em;
+  margin-bottom:1.1rem;
+  padding-bottom:.6rem;
+  border-bottom:1px solid var(--rule);
+}
+.imp-block p{
+  font-size:.9rem;color:var(--stone);
+  line-height:1.85;margin-bottom:.75rem;
+}
+.imp-block p:last-child{margin-bottom:0}
+.imp-block strong{color:var(--ink);font-weight:500}
+.imp-block a{color:var(--moss);font-weight:400}
+
+.imp-row{
+  display:grid;grid-template-columns:160px 1fr;
+  gap:.4rem 1.5rem;
+  font-size:.9rem;color:var(--stone);
+  line-height:1.75;margin-bottom:.5rem;
+  align-items:baseline;
+}
+.imp-row:last-child{margin-bottom:0}
+.imp-row dt{font-weight:500;color:var(--ink);font-size:.85rem}
+.imp-row dd{color:var(--stone)}
+
+.notice-box{
+  background:var(--sage-pale);
+  border-left:3px solid var(--sage);
+  border-radius:0 5px 5px 0;
+  padding:1rem 1.25rem;
+  font-size:.85rem;color:var(--stone);
+  line-height:1.8;margin-top:1.5rem;
+}
+.notice-box strong{color:var(--ink);font-weight:500}
+
+/* FOOTER */
+footer{
+  background:var(--ink);color:rgba(255,255,255,.5);
+  padding:2rem 0;
+  font-size:.8rem;
+}
+.footer-bottom{
+  display:flex;flex-wrap:wrap;
+  justify-content:space-between;gap:.5rem;
+}
+.footer-bottom a{color:rgba(255,255,255,.55);transition:color .2s}
+.footer-bottom a:hover{color:#fff}
+
+@media(max-width:600px){
+  .imp-row{grid-template-columns:1fr;gap:.15rem}
+  .imp-block{padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="nav-row">
+      <a href="index.html" class="logo" aria-label="Zurück zur Startseite">
+
+        <span>
+          Madeleine Gisevius
+          <span class="logo-sub">Psychotherapie</span>
+        </span>
+      </a>
+      <a href="index.html" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Zurück zur Startseite
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <p class="page-label">Rechtliches</p>
+    <h1 class="page-title">Impressum</h1>
+    <p class="page-sub">Angaben gemäß § 5 TMG</p>
+
+    <!-- Angaben zur Person -->
+    <div class="imp-block">
+      <h2>Angaben zur Person</h2>
+      <dl>
+        <div class="imp-row">
+          <dt>Name</dt>
+          <dd>Madeleine Gisevius</dd>
+        </div>
+        <div class="imp-row">
+          <dt>Anschrift</dt>
+          <dd>Westerwaldstraße 10–12<br>53757 Sankt Augustin-Hangelar</dd>
+        </div>
+        <div class="imp-row">
+          <dt>E-Mail</dt>
+          <dd><a href="mailto:psychotherapie-gisevius@gmx.de">psychotherapie-gisevius@gmx.de</a></dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- Berufsrechtliche Angaben -->
+    <div class="imp-block">
+      <h2>Berufsrechtliche Angaben</h2>
+      <dl>
+        <div class="imp-row">
+          <dt>Berufsbezeichnung</dt>
+          <dd>Psychologische Psychotherapeutin<br>
+          <span style="font-size:.82rem;color:var(--stone)">(verliehen in der Bundesrepublik Deutschland)</span></dd>
+        </div>
+        <div class="imp-row">
+          <dt>Berufsrechtliche&nbsp;Regelungen</dt>
+          <dd>
+            Berufsordnung der Psychotherapeutenkammer NRW<br>
+            Heilberufsgesetz NRW (HeilBerG NRW)
+          </dd>
+        </div>
+        <div class="imp-row">
+          <dt>Zugelassen&nbsp;bei</dt>
+          <dd>Kassenärztliche Vereinigung Nordrhein (KVNO)</dd>
+        </div>
+        <div class="imp-row">
+          <dt>Kammermitglied</dt>
+          <dd>Psychotherapeutenkammer NRW</dd>
+        </div>
+      </dl>
+      <div class="notice-box">
+        Die Berufsordnung der Psychotherapeutenkammer NRW sowie das Heilberufsgesetz NRW
+        können über die Website der
+        <strong><a href="https://www.ptk-nrw.de" target="_blank" rel="noopener">Psychotherapeutenkammer NRW</a></strong>
+        eingesehen werden.
+      </div>
+    </div>
+
+    <!-- Haftungsausschluss -->
+    <div class="imp-block">
+      <h2>Haftungsausschluss</h2>
+      <p>
+        <strong>Haftung für Inhalte:</strong> Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG
+        für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+        Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet,
+        übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach
+        Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+      </p>
+      <p>
+        <strong>Haftung für Links:</strong> Diese Website enthält Links zu externen Websites
+        Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese
+        fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten
+        ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      </p>
+      <p>
+        <strong>Urheberrecht:</strong> Die durch den Seitenbetreiber erstellten Inhalte und
+        Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
+        Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des
+        Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw.
+        Erstellers.
+      </p>
+    </div>
+
+    <!-- Hinweis -->
+    <div class="imp-block">
+      <h2>Hinweis</h2>
+      <p>
+        Diese Website dient ausschließlich der Information. Sie ersetzt keine psychotherapeutische
+        Behandlung und stellt keine Beratung oder Diagnose dar.
+        In akuten Krisen wenden Sie sich bitte an die Telefonseelsorge
+        (<strong>0800 111 0 111</strong>, kostenlos, 24&nbsp;h) oder den ärztlichen
+        Bereitschaftsdienst (<strong>116 117</strong>).
+      </p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2025 Psychotherapiepraxis Madeleine Gisevius</span>
+      <span>
+        <a href="index.html">Startseite</a> ·
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

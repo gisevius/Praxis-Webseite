@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Psychotherapiepraxis Madeleine Gisevius – Approbierte Psychologische Psychotherapeutin in Sankt Augustin bei Bonn. Einzeltherapie, Gruppentherapie und ADHS-Diagnostik für Erwachsene. Kassenzulassung vorhanden.">
+<meta name="keywords" content="Psychotherapie Sankt Augustin, Verhaltenstherapie Bonn, ADHS Diagnostik Erwachsene, Kassenplatz Psychotherapie, Madeleine Gisevius, Psychologische Psychotherapeutin Hangelar">
+<title>Psychotherapiepraxis Madeleine Gisevius – Sankt Augustin bei Bonn</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Psychotherapiepraxis Madeleine Gisevius",
+  "telephone": "+49-2241-203184",
+  "email": "psychotherapie-gisevius@gmx.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Westerwaldstraße 10-12",
+    "addressLocality": "Sankt Augustin-Hangelar",
+    "postalCode": "53757",
+    "addressCountry": "DE"
+  },
+  "medicalSpecialty": ["Psychotherapy","Behavioral Therapy","ADHD diagnostics"]
+}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --cream:     #F6F0E8;
+  --cream-dk:  #EDE4D6;
+  --white:     #FFFFFF;
+  --border:    #DDD5C4;
+  --moss:      #3B5445;
+  --sage:      #5C7D65;
+  --sage-pale: #E8F0E9;
+  --terra:     #B8714E;
+  --terra-lt:  #D4956F;
+  --sand:      #C8B49A;
+  --rule:      rgba(61,50,40,.1);
+  --stone:     #6B6358;
+  --ink:       #1E2018;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:16px;line-height:1.75;
+  color:var(--ink);background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4{
+  font-family:'Libre Baskerville',Georgia,serif;
+  font-weight:400;line-height:1.25;color:var(--ink);
+}
+
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.75rem}
+
+/* ── NAV ── */
+nav{
+  position:sticky;top:0;z-index:200;
+  background:rgba(246,240,232,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{
+  font-family:'Libre Baskerville',serif;
+  font-size:.95rem;font-weight:400;color:var(--ink);
+  letter-spacing:.015em;
+  display:flex;align-items:center;gap:.65rem;flex-shrink:0;
+}
+.logo-mark{width:32px;height:32px;flex-shrink:0}
+.logo-sub{
+  font-family:'Inter',sans-serif;font-size:.68rem;
+  font-weight:400;color:var(--stone);
+  letter-spacing:.06em;text-transform:uppercase;
+  display:block;margin-top:2px;
+}
+.nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none}
+.nav-links a{
+  font-size:.8rem;font-weight:400;color:var(--stone);
+  letter-spacing:.03em;transition:color .2s;
+}
+.nav-links a:hover{color:var(--moss)}
+.nav-links .nav-cta{
+  color:var(--terra);border-bottom:1px solid currentColor;
+  padding-bottom:1px;font-weight:500;
+}
+.hamburger{
+  display:none;flex-direction:column;gap:5px;
+  cursor:pointer;background:none;border:none;padding:4px;
+}
+.hamburger span{
+  display:block;width:22px;height:1.5px;
+  background:var(--ink);border-radius:1px;
+  transition:transform .3s,opacity .3s;
+}
+.hamburger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mobile-nav{
+  display:none;flex-direction:column;
+  border-top:1px solid var(--rule);background:var(--cream);
+}
+.mobile-nav.open{display:flex}
+.mobile-nav a{
+  padding:.85rem 1.75rem;font-size:.9rem;
+  color:var(--stone);border-bottom:1px solid var(--rule);
+}
+.mobile-nav a:last-child{color:var(--terra);font-weight:500}
+
+/* ── HERO ── */
+.hero{
+  padding:5.5rem 0 5rem;
+  border-bottom:1px solid var(--rule);
+  background:linear-gradient(135deg,var(--cream) 60%,var(--cream-dk) 100%);
+}
+.hero-inner{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  gap:4rem;align-items:center;
+}
+.hero-kicker{
+  font-size:.72rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;
+  color:var(--sage);margin-bottom:1.5rem;
+  display:flex;align-items:center;gap:.6rem;
+}
+.hero-kicker::after{content:'';display:block;width:28px;height:1px;background:var(--sage)}
+.hero h1{
+  font-size:clamp(2.1rem,4vw,3rem);
+  line-height:1.2;margin-bottom:1.25rem;letter-spacing:-.01em;
+}
+.hero h1 em{font-style:italic;color:var(--moss)}
+.hero-lead{
+  font-size:.975rem;color:var(--stone);
+  max-width:460px;line-height:1.9;margin-bottom:2.25rem;
+}
+.hero-cta{
+  display:inline-block;background:var(--moss);color:#fff;
+  padding:.8rem 1.8rem;font-size:.875rem;font-weight:500;
+  letter-spacing:.02em;border-radius:3px;
+  transition:background .2s,transform .15s;
+}
+.hero-cta:hover{background:#2e4338;transform:translateY(-1px)}
+
+/* Portrait */
+.portrait-wrapper{display:flex;justify-content:center;align-items:center}
+.portrait-image{
+  width:100%;max-width:360px;
+  aspect-ratio:4/5;object-fit:cover;
+  object-position:center 15%;
+  border-radius:18px;
+  box-shadow:0 12px 40px rgba(61,50,40,.15);
+  border:1px solid var(--border);
+}
+
+/* ── SHARED ── */
+.section{padding:5rem 0;border-bottom:1px solid var(--rule)}
+.sec-header{margin-bottom:3rem}
+.sec-label{
+  font-size:.7rem;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--terra);margin-bottom:.65rem;
+}
+.sec-title{font-size:clamp(1.6rem,3vw,2.15rem);margin-bottom:.8rem}
+.sec-intro{font-size:.95rem;color:var(--stone);max-width:560px;line-height:1.85}
+
+/* ── ÜBER MICH ── */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.prose p{
+  font-size:.95rem;color:var(--stone);
+  line-height:1.9;margin-bottom:1.2rem;
+}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--ink);font-weight:500}
+.haltung-list{
+  margin-top:1.75rem;list-style:none;
+  display:flex;flex-direction:column;gap:.8rem;
+}
+.haltung-list li{
+  display:flex;gap:.85rem;align-items:flex-start;
+  font-size:.9rem;color:var(--stone);line-height:1.7;
+}
+.hdot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--terra-lt);flex-shrink:0;margin-top:.56rem;
+}
+.qualifikationen{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:6px;padding:1.75rem;
+}
+.qual-heading{
+  font-family:'Inter',sans-serif;font-size:.68rem;font-weight:500;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--stone);margin-bottom:1.1rem;
+}
+.qual-item{
+  display:flex;gap:.75rem;
+  font-size:.85rem;color:var(--stone);
+  line-height:1.6;padding:.65rem 0;
+  border-bottom:1px solid var(--rule);
+}
+.qual-item:last-child{border-bottom:none;padding-bottom:0}
+.qual-year{font-weight:500;color:var(--ink);min-width:80px;flex-shrink:0}
+
+/* ── LEISTUNGEN ── */
+.leistungen-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.25rem;
+}
+.leistung-item{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:8px;overflow:hidden;
+  transition:box-shadow .2s,transform .2s;
+}
+.leistung-item:hover{
+  box-shadow:0 8px 28px rgba(61,50,40,.09);
+  transform:translateY(-2px);
+}
+.leistung-photo{
+  width:100%;height:200px;
+  object-fit:cover;
+  display:block;
+  border-bottom:1px solid var(--border);
+  /* warm filter via CSS */
+  filter:sepia(12%) saturate(1.1) brightness(1.02);
+}
+.leistung-body{padding:1.5rem 1.75rem 1.75rem}
+.leistung-icon{
+  width:40px;height:40px;background:var(--sage-pale);
+  border-radius:7px;display:flex;align-items:center;
+  justify-content:center;margin-bottom:1.1rem;
+}
+.leistung-item h3{font-size:1.08rem;margin-bottom:.55rem}
+.leistung-item p{font-size:.875rem;color:var(--stone);line-height:1.8}
+.leistung-tag{
+  display:inline-block;margin-top:.9rem;
+  font-size:.68rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--moss);background:var(--sage-pale);padding:.2rem .55rem;border-radius:3px;
+}
+
+/* ── ADHS ── */
+.adhs-section{background:var(--cream-dk)}
+.adhs-aside{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:8px;padding:1.75rem;
+}
+.adhs-aside h4{font-size:1rem;margin-bottom:1.1rem}
+.adhs-step{
+  display:flex;gap:1rem;margin-bottom:1.1rem;align-items:flex-start;
+}
+.adhs-step:last-child{margin-bottom:0}
+.adhs-num{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--sage-pale);color:var(--moss);
+  font-size:.78rem;font-weight:500;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.adhs-step-text h5{
+  font-size:.875rem;font-family:'Inter',sans-serif;
+  font-weight:500;margin-bottom:.2rem;
+}
+.adhs-step-text p{font-size:.82rem;color:var(--stone);line-height:1.7}
+.kassen-hinweis{
+  margin-top:1.5rem;
+  padding:1rem 1.25rem;
+  background:var(--sage-pale);
+  border-left:3px solid var(--sage);
+  border-radius:0 5px 5px 0;
+  font-size:.875rem;color:var(--stone);line-height:1.75;
+}
+.kassen-hinweis strong{color:var(--ink);font-weight:500}
+
+/* ── VT ── */
+.vt-section{background:var(--white)}
+.faq-list{display:flex;flex-direction:column;gap:.6rem}
+.faq-item{
+  background:var(--cream);border:1px solid var(--border);
+  border-radius:6px;overflow:hidden;
+}
+.faq-q{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1rem 1.25rem;cursor:pointer;
+  font-family:'Libre Baskerville',serif;font-size:1rem;color:var(--ink);
+  gap:1rem;list-style:none;user-select:none;
+}
+.faq-q::-webkit-details-marker{display:none}
+.faq-chev{flex-shrink:0;width:16px;height:16px;transition:transform .25s}
+details[open] .faq-chev{transform:rotate(180deg)}
+.faq-a{
+  padding:.85rem 1.25rem 1rem;
+  font-size:.875rem;color:var(--stone);line-height:1.8;
+  border-top:1px solid var(--rule);
+}
+
+/* ── ABRECHNUNG ── */
+.abrechnung-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem}
+.abrech-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:8px;padding:1.75rem;
+}
+.abrech-card h3{font-size:1.05rem;margin-bottom:.6rem}
+.abrech-card p{font-size:.875rem;color:var(--stone);line-height:1.8}
+.abrech-icon{
+  width:38px;height:38px;background:var(--sage-pale);
+  border-radius:7px;display:flex;align-items:center;
+  justify-content:center;margin-bottom:1.1rem;
+}
+
+/* ── ANFAHRT ── */
+.anfahrt-section{background:var(--cream-dk)}
+.anfahrt-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.anfahrt-detail{
+  display:flex;gap:.75rem;align-items:flex-start;
+  font-size:.9rem;color:var(--stone);margin-bottom:.9rem;
+}
+.anfahrt-detail:last-child{margin-bottom:0}
+.a-icon{
+  width:32px;height:32px;background:var(--white);
+  border:1px solid var(--border);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:1px;
+}
+/* Map image (the ChatGPT-generated map graphic) */
+.map-img-wrap{
+  border-radius:8px;overflow:hidden;
+  border:1px solid var(--border);
+  box-shadow:0 4px 16px rgba(61,50,40,.08);
+}
+.map-img-wrap img{
+  width:100%;height:auto;display:block;
+}
+
+/* ── KONTAKT ── */
+.kontakt-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.kontakt-info p{font-size:.9rem;color:var(--stone);line-height:1.85;margin-bottom:1.25rem}
+.kontakt-details{display:flex;flex-direction:column;gap:.85rem;margin-top:1.75rem}
+.kd{display:flex;gap:.75rem;align-items:flex-start;font-size:.875rem;color:var(--stone)}
+.kd-icon{
+  width:32px;height:32px;background:var(--cream-dk);
+  border:1px solid var(--border);border-radius:5px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;margin-top:1px;
+}
+.kd a{color:var(--moss);font-weight:500;transition:color .2s}
+.kd a:hover{color:var(--terra)}
+.mail-cta-box{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:8px;padding:2rem;
+}
+.mail-cta-box h3{font-size:1.05rem;margin-bottom:.6rem}
+.mail-cta-box p{font-size:.875rem;color:var(--stone);line-height:1.8;margin-bottom:1.25rem}
+.btn-mail{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--terra);color:#fff;
+  padding:.8rem 1.6rem;border-radius:3px;
+  font-size:.875rem;font-weight:500;letter-spacing:.02em;
+  transition:background .2s,transform .15s;
+}
+.btn-mail:hover{background:#9e5e3e;transform:translateY(-1px)}
+.dsgvo-box{
+  margin-top:1.25rem;padding:1rem 1.25rem;
+  background:var(--cream-dk);border:1px solid var(--border);
+  border-radius:5px;font-size:.78rem;color:var(--stone);line-height:1.7;
+}
+.dsgvo-box strong{color:var(--ink);font-weight:500;display:block;margin-bottom:.2rem}
+.crisis-box{
+  margin-top:1.25rem;padding:1rem 1.25rem;
+  background:var(--cream-dk);border:1px solid var(--border);
+  border-radius:5px;font-size:.78rem;color:var(--stone);line-height:1.7;
+}
+.crisis-box strong{color:var(--ink);font-weight:500;display:block;margin-bottom:.2rem}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);color:rgba(255,255,255,.55);padding:3rem 0 2rem}
+.footer-grid{
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  gap:2.5rem;margin-bottom:2.5rem;
+}
+.footer-brand .logo{color:rgba(255,255,255,.85)}
+.footer-brand p{font-size:.8rem;margin-top:.65rem;max-width:260px;line-height:1.75}
+.footer-col{display:flex;flex-direction:column;gap:.5rem}
+.footer-col-label{
+  font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(255,255,255,.3);margin-bottom:.25rem;
+}
+.footer-col a{font-size:.82rem;transition:color .2s}
+.footer-col a:hover{color:rgba(255,255,255,.9)}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;
+  display:flex;flex-wrap:wrap;justify-content:space-between;
+  gap:.5rem;font-size:.75rem;
+}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:860px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero-inner{grid-template-columns:1fr;gap:2.5rem}
+  .portrait-image{max-width:280px}
+  .two-col,.anfahrt-grid,.kontakt-inner{grid-template-columns:1fr;gap:2.5rem}
+}
+@media(max-width:560px){
+  .hero{padding:3.5rem 0 3rem}
+  .section{padding:3.5rem 0}
+  .leistungen-grid,.abrechnung-grid{grid-template-columns:1fr}
+  .footer-grid{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="wrap">
+    <div class="nav-row">
+      <a href="#" class="logo" aria-label="Psychotherapiepraxis Gisevius – Startseite">
+
+        <span>
+          Madeleine Gisevius
+          <span class="logo-sub">Psychotherapie</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#verhaltenstherapie">Verhaltenstherapie</a></li>
+        <li><a href="#abrechnung">Abrechnung</a></li>
+        <li><a href="#anfahrt">Anfahrt</a></li>
+        <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobilmenü">
+      <a href="#ueber-mich">Über mich</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#verhaltenstherapie">Verhaltenstherapie</a>
+      <a href="#abrechnung">Abrechnung</a>
+      <a href="#anfahrt">Anfahrt</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" aria-labelledby="hero-h1">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <p class="hero-kicker">Approbierte Psychologische Psychotherapeutin</p>
+        <h1 id="hero-h1">
+          Der erste Schritt<br>
+          <em>beginnt hier.</em>
+        </h1>
+        <p class="hero-lead">
+          Psychotherapeutische Behandlung für Erwachsene in Sankt Augustin bei Bonn.
+          Schwerpunkt: Verhaltenstherapie und ADHS-Diagnostik im Erwachsenenalter.
+        </p>
+        <a href="#kontakt" class="hero-cta">Kontakt aufnehmen</a>
+      </div>
+      <div class="portrait-wrapper reveal">
+        <img
+          src="1000019240.jpg"
+          alt="Madeleine Gisevius, Approbierte Psychologische Psychotherapeutin in Sankt Augustin-Hangelar"
+          class="portrait-image"
+          loading="eager">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ÜBER MICH -->
+<section class="section" id="ueber-mich" aria-labelledby="ueber-title">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <p class="sec-label">Über mich</p>
+      <h2 class="sec-title" id="ueber-title">Meine therapeutische Haltung</h2>
+      <p class="sec-intro">
+        Therapie wirkt, wenn eine echte Arbeitsbeziehung entsteht.
+        Meine Arbeit gründet auf Respekt, Offenheit und dem Vertrauen in Ihre Ressourcen.
+      </p>
+    </div>
+    <div class="two-col">
+      <div class="prose reveal">
+        <p>
+          Ich bin <strong>Madeleine Gisevius</strong>, approbierte Psychologische
+          Psychotherapeutin mit Kassenzulassung und behandle ausschließlich Erwachsene.
+          In meiner Arbeit verbinde ich wissenschaftlich fundierte Methoden der
+          kognitiven Verhaltenstherapie mit einem aufmerksamen Blick auf die
+          individuelle Lebensgeschichte jedes Menschen.
+        </p>
+        <p>
+          Mich leitet die Überzeugung, dass Veränderung möglich ist – auch dann,
+          wenn sie sich noch weit entfernt anfühlt. Der erste Schritt braucht
+          keine Gewissheit, nur den Mut zur Anfrage.
+        </p>
+        <p>
+          In der Praxis lege ich Wert auf Transparenz: Sie wissen zu jedem
+          Zeitpunkt, woran wir arbeiten, welche Methoden ich einsetze und warum.
+        </p>
+        <ul class="haltung-list">
+          <li><span class="hdot" aria-hidden="true"></span>Ressourcenorientierung – Ihre Stärken stehen im Mittelpunkt</li>
+          <li><span class="hdot" aria-hidden="true"></span>Transparenz über Methoden und Therapieverlauf</li>
+          <li><span class="hdot" aria-hidden="true"></span>Kooperative Arbeitsweise auf Augenhöhe</li>
+          <li><span class="hdot" aria-hidden="true"></span>Sorgfalt in der Diagnostik als Grundlage jeder Behandlung</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <div class="qualifikationen">
+          <p class="qual-heading">Ausbildung &amp; Qualifikationen</p>
+          <div class="qual-item">
+            <span class="qual-year">Approbation</span>
+            <span>Psychologische Psychotherapeutin, Fachrichtung Verhaltenstherapie</span>
+          </div>
+          <div class="qual-item">
+            <span class="qual-year">Studium</span>
+            <span>Psychologie (M.&nbsp;Sc.) – Universität Wuppertal</span>
+          </div>
+          <div class="qual-item">
+            <span class="qual-year">Ausbildung</span>
+            <span>Verhaltenstherapie, DGVT (staatlich anerkannt)</span>
+          </div>
+          <div class="qual-item">
+            <span class="qual-year">Mitglied</span>
+            <span>Psychotherapeutenkammer NRW</span>
+          </div>
+          <div class="qual-item">
+            <span class="qual-year">Zulassung</span>
+            <span>Vertragspsychotherapeutin (GKV) seit 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section class="section" id="leistungen" aria-labelledby="leistungen-title">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <p class="sec-label">Leistungen</p>
+      <h2 class="sec-title" id="leistungen-title">Was ich anbiete</h2>
+      <p class="sec-intro">
+        Alle Angebote richten sich an Erwachsene ab 18 Jahren.
+        Als Vertragspsychotherapeutin rechne ich direkt mit Ihrer gesetzlichen Krankenkasse ab.
+      </p>
+    </div>
+    <div class="leistungen-grid">
+
+      <div class="leistung-item reveal">
+        <div class="leistung-body" style="padding-top:1.75rem">
+          <div class="leistung-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B5445" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <h3>Einzeltherapie</h3>
+          <p>
+            Vertrauliche Einzel-Sitzungen à 50 Minuten zur Behandlung von Depressionen,
+            Angsterkrankungen, Zwängen, Traumafolgen und anderen psychischen Belastungen.
+            Auf Basis eines Therapieantrags bei Ihrer gesetzlichen Krankenkasse.
+          </p>
+          <span class="leistung-tag">GKV · Privat · Selbstzahler</span>
+        </div>
+      </div>
+
+      <div class="leistung-item reveal">
+        <div class="leistung-body" style="padding-top:1.75rem">
+          <div class="leistung-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B5445" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="9" cy="7" r="3"/>
+              <circle cx="17" cy="7" r="3"/>
+              <path d="M3 21v-1a5 5 0 0 1 5-5h4"/>
+              <path d="M16 19h6m-3-3v6"/>
+            </svg>
+          </div>
+          <h3>Gruppenangebote</h3>
+          <p>
+            Strukturierte Therapiegruppen zu ausgewählten Themen. Die Gruppe bietet Raum
+            für gemeinsames Lernen, gegenseitige Unterstützung und das Erleben,
+            nicht allein zu sein.
+          </p>
+          <span class="leistung-tag">GKV · Privat</span>
+        </div>
+      </div>
+
+      <div class="leistung-item reveal">
+        <div class="leistung-body" style="padding-top:1.75rem">
+          <div class="leistung-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B5445" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M9 9h6M9 12h6M9 15h4"/>
+            </svg>
+          </div>
+          <h3>ADHS-Diagnostik</h3>
+          <p>
+            Differenzierte neuropsychologische Testdiagnostik für Erwachsene.
+            Umfasst Anamnese, standardisierte Tests, Befunderstellung und ein
+            ausführliches Rückmeldegespräch mit Empfehlungen.
+          </p>
+          <span class="leistung-tag">GKV · Privat · Selbstzahler</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ADHS DETAIL -->
+<section class="section adhs-section" id="adhs" aria-labelledby="adhs-title">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <p class="sec-label">Schwerpunkt</p>
+      <h2 class="sec-title" id="adhs-title">ADHS-Diagnostik für Erwachsene in Bonn und Umgebung</h2>
+    </div>
+    <div class="two-col">
+      <div class="prose reveal">
+        <p>
+          Die ADHS-Diagnostik für Erwachsene richtet sich an Menschen aus Bonn,
+          Sankt Augustin, Siegburg und der umliegenden Region, die unter
+          Konzentrationsproblemen, innerer Unruhe, Prokrastination oder
+          emotionaler Überforderung leiden.
+        </p>
+        <p>
+          Die Abklärung erfolgt strukturiert anhand einer ausführlichen klinischen
+          Anamnese, standardisierter Testverfahren sowie einer sorgfältigen
+          differentialdiagnostischen Einordnung.
+        </p>
+        <p>
+          ADHS im Erwachsenenalter bleibt häufig lange unerkannt. Viele Betroffene
+          berichten von lebenslangen Schwierigkeiten mit Selbstorganisation,
+          Zeitmanagement und emotionaler Regulation, ohne zu wissen, woher diese rühren.
+          Eine fundierte Diagnostik kann hier Klarheit und neue Handlungsperspektiven schaffen.
+        </p>
+        <div class="kassen-hinweis">
+          <strong>Kostenübernahme:</strong> Die ADHS-Diagnostik für Erwachsene wird
+          in der Regel von gesetzlichen und privaten Krankenkassen übernommen.
+          
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="adhs-aside">
+          <h4>Ablauf der Diagnostik</h4>
+          <div class="adhs-step">
+            <div class="adhs-num">1</div>
+            <div class="adhs-step-text">
+              <h5>Erstgespräch</h5>
+              <p>Ausführliche Anamnese zu Symptomen, Vorgeschichte und Alltagsbeeinträchtigungen</p>
+            </div>
+          </div>
+          <div class="adhs-step">
+            <div class="adhs-num">2</div>
+            <div class="adhs-step-text">
+              <h5>Testdiagnostik</h5>
+              <p>Standardisierte Tests und Fragebögen</p>
+            </div>
+          </div>
+          <div class="adhs-step">
+            <div class="adhs-num">3</div>
+            <div class="adhs-step-text">
+              <h5>Differentialdiagnostik</h5>
+              <p>Sorgfältige Abgrenzung von anderen psychischen Erkrankungen mit ähnlichem Bild</p>
+            </div>
+          </div>
+          <div class="adhs-step">
+            <div class="adhs-num">4</div>
+            <div class="adhs-step-text">
+              <h5>Rückmeldegespräch</h5>
+              <p>Ausführliche Befundmitteilung mit schriftlichem Bericht und Empfehlungen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VERHALTENSTHERAPIE -->
+<section class="section vt-section" id="verhaltenstherapie" aria-labelledby="vt-title">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <p class="sec-label">Information</p>
+      <h2 class="sec-title" id="vt-title">Was ist Verhaltenstherapie?</h2>
+      <p class="sec-intro">
+        Die kognitive Verhaltenstherapie ist eine der am besten erforschten psychotherapeutischen
+        Methoden und von den Krankenkassen als Richtlinienverfahren anerkannt.
+      </p>
+    </div>
+    <div class="two-col">
+      <div class="prose reveal">
+        <p>
+          Die <strong>kognitive Verhaltenstherapie (KVT)</strong> geht davon aus, dass
+          unsere Gedanken, Gefühle und Verhaltensweisen eng miteinander verbunden sind.
+          Belastende Gefühle entstehen oft durch bestimmte Denkmuster – und diese
+          Muster lassen sich erkennen und verändern.
+        </p>
+        <p>
+          Im Gegensatz zu anderen Therapieformen ist die KVT stark auf die
+          <strong>Gegenwart</strong> ausgerichtet: Wir arbeiten an konkreten Problemen
+          und entwickeln gemeinsam praktische Strategien für den Alltag. Dabei ist auch
+          die <strong>Biographiearbeit</strong> ein wichtiger Bestandteil – denn ein
+          Verständnis der eigenen Geschichte hilft, aktuelle Muster besser einzuordnen
+          und nachhaltig zu verändern.
+        </p>
+        <p>
+          Verhaltenstherapie ist aktiv und strukturiert. Zwischen den Sitzungen werden
+          häufig kleine Aufgaben vereinbart, um das Gelernte zu festigen. Das erfordert
+          Engagement – und ermöglicht echte, nachhaltige Veränderung.
+        </p>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary class="faq-q">
+            Für wen ist Verhaltenstherapie geeignet?
+            <svg class="faq-chev" viewBox="0 0 16 16" fill="none" stroke="#6B6358" stroke-width="1.5" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg>
+          </summary>
+          <div class="faq-a">
+            KVT ist bei einer Vielzahl psychischer Erkrankungen wirksam: Depressionen,
+            Angst- und Panikstörungen, soziale Phobien, Zwangsstörungen, PTBS, Burnout
+            und viele weitere. Im Erstgespräch klären wir gemeinsam, ob das Verfahren
+            für Ihre Situation passend ist.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">
+            Wie läuft eine Therapie ab?
+            <svg class="faq-chev" viewBox="0 0 16 16" fill="none" stroke="#6B6358" stroke-width="1.5" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg>
+          </summary>
+          <div class="faq-a">
+            Am Anfang steht eine psychotherapeutische Sprechstunde und zwei bis vier
+            probatorische Sitzungen, in denen wir Ihre Anliegen kennenlernen und
+            gemeinsam Therapieziele formulieren. Danach folgt der Therapieantrag
+            an die Krankenkasse. Die eigentliche Therapie umfasst in der Regel
+            24 bis 60 Sitzungen, je nach Bedarf.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">
+            Was kostet mich die Therapie als GKV-Patient?
+            <svg class="faq-chev" viewBox="0 0 16 16" fill="none" stroke="#6B6358" stroke-width="1.5" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg>
+          </summary>
+          <div class="faq-a">
+            Als Vertragspsychotherapeutin rechne ich direkt mit Ihrer gesetzlichen
+            Krankenkasse ab. Für Sie entstehen in der Regel keine Kosten –
+            die Therapie ist eine Kassenleistung.
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">
+            Muss ich lange auf einen Termin warten?
+            <svg class="faq-chev" viewBox="0 0 16 16" fill="none" stroke="#6B6358" stroke-width="1.5" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg>
+          </summary>
+          <div class="faq-a">
+            Wartezeiten auf Therapieplätze sind leider oft unvermeidbar. Über die
+            Terminservicestelle der Kassenärztlichen Vereinigung (Tel. 116&nbsp;117)
+            haben Sie einen gesetzlichen Anspruch auf ein Erstgespräch innerhalb
+            von vier Wochen. Schreiben Sie mir – ich informiere Sie über
+            aktuelle Kapazitäten.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABRECHNUNG -->
+<section class="section" id="abrechnung" aria-labelledby="abrechnung-title">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <p class="sec-label">Abrechnung</p>
+      <h2 class="sec-title" id="abrechnung-title">Wer kann zu mir kommen?</h2>
+      <p class="sec-intro">
+        Ich bin als Vertragspsychotherapeutin zugelassen und rechne direkt mit der
+        gesetzlichen Krankenversicherung ab. Ein Überweisungsschein ist nicht erforderlich.
+      </p>
+    </div>
+    <div class="abrechnung-grid reveal">
+      <div class="abrech-card">
+        <div class="abrech-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B5445" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <path d="M9 12l2 2 4-4"/>
+            <path d="M21 12c0 5-4 9-9 9s-9-4-9-9 4-9 9-9 9 4 9 9z"/>
+          </svg>
+        </div>
+        <h3>Gesetzlich Versicherte</h3>
+        <p>
+          Als Vertragspsychotherapeutin rechne ich direkt mit Ihrer GKV ab.
+          Sie benötigen lediglich Ihre Versichertenkarte – kein Überweisungsschein,
+          keine Vorauszahlung. Den Therapieantrag stellen wir gemeinsam.
+        </p>
+      </div>
+      <div class="abrech-card">
+        <div class="abrech-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B5445" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <rect x="2" y="5" width="20" height="14" rx="2"/>
+            <path d="M2 10h20"/>
+          </svg>
+        </div>
+        <h3>Privat Versicherte</h3>
+        <p>
+          Privat Versicherte erhalten eine Rechnung nach der Gebührenordnung
+          für Psychotherapeuten (GOP). Die Kosten werden in der Regel von
+          Ihrer PKV vollständig erstattet.
+        </p>
+      </div>
+      <div class="abrech-card">
+        <div class="abrech-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B5445" stroke-width="1.7" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3>Selbstzahler</h3>
+        <p>
+          Ohne Versicherungsleistung ist eine Therapie als Selbstzahler möglich.
+          Das Honorar richtet sich nach dem GOP-Rahmen. Gerne besprechen wir
+          Konditionen im Erstgespräch.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANFAHRT -->
+<section class="section anfahrt-section" id="anfahrt" aria-labelledby="anfahrt-title">
+  <div class="wrap">
+    <div class="sec-header reveal">
+      <p class="sec-label">Anfahrt</p>
+      <h2 class="sec-title" id="anfahrt-title">So finden Sie die Praxis</h2>
+    </div>
+    <div class="anfahrt-grid">
+      <div class="reveal">
+        <div class="anfahrt-detail">
+          <div class="a-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C7D65" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <strong style="color:var(--ink);font-size:.875rem;display:block;margin-bottom:.2rem">Psychotherapiepraxis Madeleine Gisevius</strong>
+            <span style="font-size:.875rem">Westerwaldstraße 10–12<br>53757 Sankt Augustin-Hangelar</span>
+          </div>
+        </div>
+        <div class="anfahrt-detail">
+          <div class="a-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C7D65" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <span style="font-size:.875rem"><strong style="color:var(--ink)">1. Obergeschoss</strong></span>
+        </div>
+        <div class="anfahrt-detail">
+          <div class="a-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C7D65" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <rect x="1" y="3" width="15" height="13" rx="2"/>
+              <path d="M16 8h4l3 4v3h-7V8z"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <div style="font-size:.875rem">
+            <strong style="color:var(--ink)">Mit dem Auto:</strong> Über die A59 oder A3, Ausfahrt Niederberg.
+            Über die B56 / Köln-Bonner-Straße Richtung Niederberg.
+            <br><em style="color:var(--terra);font-size:.82rem">Parkplatzsituation eingeschränkt – bitte mehr Zeit einplanen.</em>
+          </div>
+        </div>
+        <div class="anfahrt-detail">
+          <div class="a-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C7D65" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <rect x="4" y="3" width="16" height="18" rx="2"/>
+              <path d="M4 9h16M4 15h16M8 3v18M16 3v18"/>
+            </svg>
+          </div>
+          <div style="font-size:.875rem">
+            <strong style="color:var(--ink)">Mit öffentlichen Verkehrsmitteln:</strong>
+            Mit der Bahn bis Bahnhof Hangelar, von dort ca. 10 Min. Fußweg oder 2 Min. mit dem Bus.
+          </div>
+        </div>
+      </div>
+      <div class="map-img-wrap reveal">
+        <img
+          src="anfahrt.png"
+          alt="Anfahrtskarte zur Psychotherapiepraxis Gisevius in Sankt Augustin-Hangelar mit Übersichtskarte und Detailkarte"
+          loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section" id="kontakt" aria-labelledby="kontakt-title">
+  <div class="wrap">
+    <div class="kontakt-inner">
+      <div class="reveal">
+        <p class="sec-label">Kontakt</p>
+        <h2 class="sec-title" id="kontakt-title">Schreiben Sie mir</h2>
+        <p>
+          Ich freue mich über Ihre Nachricht. Eine psychotherapeutische Sprechstunde ist der erste Schritt – unverbindlich und vertraulich.
+        </p>
+        <div class="kontakt-details">
+          <div class="kd">
+            <div class="kd-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C7D65" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <span><a href="mailto:psychotherapie-gisevius@gmx.de">psychotherapie-gisevius@gmx.de</a></span>
+          </div>
+          <div class="kd">
+            <div class="kd-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5C7D65" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <span>Westerwaldstraße 10–12, 53757 Sankt Augustin-Hangelar<br>1. Obergeschoss</span>
+          </div>
+        </div>
+        <div class="crisis-box">
+          <strong>In akuten Krisen</strong>
+          Diese Seite ist kein Kriseninterventionsdienst. Bei akuter Gefahr:
+          Telefonseelsorge <strong>0800&nbsp;111&nbsp;0&nbsp;111</strong> (kostenlos, 24&nbsp;h)
+          oder ärztlicher Bereitschaftsdienst <strong>116&nbsp;117</strong>.
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="mail-cta-box">
+          <h3>Kontakt per E-Mail</h3>
+          <p>
+            Die bevorzugte Kontaktaufnahme erfolgt per E-Mail. Beschreiben Sie kurz
+            Ihr Anliegen – auch ein einzelner Satz genügt. Ich melde mich zeitnah
+            bei Ihnen zurück.
+          </p>
+          <a href="mailto:psychotherapie-gisevius@gmx.de" class="btn-mail">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            E-Mail schreiben
+          </a>
+          <div class="dsgvo-box">
+            <strong>Datenschutzhinweis (DSGVO)</strong>
+            Wenn Sie uns per E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung
+            der Anfrage gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung
+            weiter. Sie haben das Recht auf Auskunft, Berichtigung und Löschung Ihrer
+            gespeicherten Daten gemäß Art.&nbsp;15–17 DSGVO. Bitte senden Sie keine
+            sensiblen medizinischen Informationen unverschlüsselt per E-Mail.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="Zurück zum Seitenanfang">
+
+          <span>
+            Madeleine Gisevius
+            <span class="logo-sub" style="color:rgba(255,255,255,.35)">Psychotherapie</span>
+          </span>
+        </a>
+        <p>Approbierte Psychologische Psychotherapeutin · Verhaltenstherapie · Kassenzulassung</p>
+        <p style="margin-top:.5rem">Psychotherapiepraxis in Sankt Augustin-Hangelar · Nähe Bonn · Rhein-Sieg-Kreis</p>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Navigation</span>
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#adhs">ADHS-Diagnostik</a>
+        <a href="#verhaltenstherapie">Verhaltenstherapie</a>
+        <a href="#abrechnung">Abrechnung</a>
+        <a href="#anfahrt">Anfahrt</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Kontakt</span>
+        <a href="mailto:psychotherapie-gisevius@gmx.de">psychotherapie-gisevius@gmx.de</a>
+        <span style="font-size:.82rem;line-height:1.6">Westerwaldstraße 10–12<br>53757 Sankt Augustin-Hangelar</span>
+        <span class="footer-col-label" style="margin-top:.5rem">Rechtliches</span>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutzerklärung</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Psychotherapiepraxis Madeleine Gisevius. Alle Rechte vorbehalten.</span>
+      <span>Mitglied der Psychotherapeutenkammer NRW</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const btn=document.getElementById('hamburger');
+const mnav=document.getElementById('mobileNav');
+btn.addEventListener('click',()=>{
+  const o=mnav.classList.toggle('open');
+  btn.classList.toggle('open',o);
+  btn.setAttribute('aria-expanded',String(o));
+});
+mnav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mnav.classList.remove('open');
+  btn.classList.remove('open');
+  btn.setAttribute('aria-expanded','false');
+}));
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){
+      setTimeout(()=>e.target.classList.add('visible'),i*70);
+      obs.unobserve(e.target);
+    }
+  });
+},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
